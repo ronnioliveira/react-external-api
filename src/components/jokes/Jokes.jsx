@@ -16,30 +16,23 @@ export default function Jokes() {
 
     return (
         <div className='container'>
-            <table>
-                <tr>
-                    <td className='alignLeft'>
-                        <div>
-                            <input type="button" id="jokes" onClick={() => getRandomJokes()} value="Get a Joke" />
-                        </div>
-                    </td>
-                    <td>
-                        <div>
-                            <p>
-                                Joke Number: {jokes.id}
-                            </p>
-                            <p>
-                                Question: {jokes.setup}
-                            </p>
-                            <p>
-                                Answer: {jokes.punchline}
-                            </p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-
-
+            <h3>Using javascript fetch</h3>
+            <div>
+                <input type="button" id="jokes" onClick={() => getRandomJokes()} value="Get a Joke" />
+            </div>
+            <ul>
+                <li>
+                    <p>
+                        Joke Number: {jokes.id}
+                    </p>
+                    <p>
+                        Question: {jokes.setup}
+                    </p>
+                    <p>
+                        Answer: {jokes.punchline}
+                    </p>
+                </li>
+            </ul>     
         </div>
 
     )
